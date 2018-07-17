@@ -1,0 +1,23 @@
+{
+  "name": "@ldnwc/logo",
+  "version": "1.0.0",
+  "description": "Out rather snazzy logo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ldnwc/ldnwc-logo.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "web",
+    "web",
+    "component",
+    "logo"
+  ],
+  "bugs": {
+    "url": "https://github.com/ldnwc/ldnwc-logo/issues"
+  },
+  "homepage": "https://github.com/ldnwc/ldnwc-logo#readme"
+}
