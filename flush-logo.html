@@ -1,7 +1,6 @@
-
-<template id="ldnwc-logo">
+<template id="flush-logo">
   <style>
-    .ldnwc-logo {
+    .logo {
       position: relative;
       margin: auto;
       max-width: 96vw;
@@ -9,7 +8,7 @@
     }
   </style>
   
-  <svg id="ldnwc" class="ldnwc-logo" width="397px" height="424px" viewBox="0 0 397 424" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg id="flush" class="logo" width="397px" height="424px" viewBox="0 0 397 424" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g id="shield" fill-rule="nonzero">
         <polygon fill="#3456C5" points="264.94 424 119.94 422.63 0.1 94.63 6.1 88.63 336.45 0.25 396.31 344.25 390.31 350.25"></polygon>
@@ -57,12 +56,13 @@
 
 <script>
   (function () {
-    const tmpl = document.querySelector('#ldnwc-logo');
-
-    class LndwcLogo extends HTMLElement {
+    const tmpl = document.getElementById("flush-logo");
+    
+    class FlushLogo extends HTMLElement {
       constructor() {
         super();
-        this.shadow = this.attachShadow({mode: 'open'})
+
+        this.shadow = this.attachShadow({mode: "open"})
         this.shadow.appendChild(tmpl.content.cloneNode(true));
       }
 
@@ -76,7 +76,7 @@
       }
     }
 
-    customElements.define('ldnwc-logo', LndwcLogo);
+    customElements.define("flush-logo", FlushLogo);
 
     function move(elem) {
       var x = 0, xMulti = 2 + Math.random(), xVarience = 12 + Math.random() * 2

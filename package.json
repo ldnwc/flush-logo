@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ldnwc/ldnwc-logo/issues"
   },
-  "homepage": "https://github.com/ldnwc/ldnwc-logo#readme"
+  "homepage": "https://github.com/ldnwc/ldnwc-logo#readme",
+  "dependencies": {
+    "plop": "^2.1.0"
+  }
 }
